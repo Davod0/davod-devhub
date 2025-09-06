@@ -23,13 +23,13 @@ export default function Home() {
 
       <div className="flex gap-4">
         <a
-          href="#projects"
+          href="./projects"
           className="px-6 py-3 rounded-full bg-blue-500 text-white shadow hover:bg-blue-600 transition font-semibold text-base"
         >
           View Projects
         </a>
         <a
-          href="#contact"
+          href="./contact"
           className="px-6 py-3 rounded-full border-2 border-blue-400 text-blue-600 hover:bg-blue-100 dark:hover:bg-blue-900/20 transition font-semibold text-base"
         >
           Contact Me

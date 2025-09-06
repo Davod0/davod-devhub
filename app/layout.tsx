@@ -13,10 +13,10 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "davod nikoyi",
+  title: "Davod Nikoyi",
   description: "Davod's personal portfolio website",
   icons: {
-    icon: "/davod.png",
+    icon: "./favicon.ico",
   },
 };
 
