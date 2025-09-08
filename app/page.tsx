@@ -15,7 +15,7 @@ export default function Home() {
       />
     </div>
       <h1 className="text-4xl font-extrabold mb-4 text-center tracking-tight">
-        Hi, I am <span className="text-blue-500 dark:text-blue-400">Davod</span>
+        Hi, I'am <span className="text-blue-500 dark:text-blue-400">Davod</span>
       </h1>
       <p className="max-w-xl text-lg text-center mb-10 font-medium text-slate-600 dark:text-slate-300">
         Full stack web developer crafting clean, scalable and performant applications
