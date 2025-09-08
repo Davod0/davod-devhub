@@ -8,12 +8,11 @@ export default function Menu() {
 
   return (
     <div className="fixed top-6 right-6 z-50">
-      {/* Custom menu icon with spin animation */}
       <motion.button
         onClick={() => setOpen(!open)}
-        animate={{ rotate: open ? 720 : 0 }} // two full spins
+        animate={{ rotate: open ? 1440 : 0 }}
         transition={{ duration: 0.8, ease: "easeInOut" }}
-        className="p-2 rounded-md bg-white/20 dark:bg-black/20 backdrop-blur-md hover:scale-110 transition-transform"
+        className="p-2 rounded-md backdrop-blur-md hover:scale-110 transition-transform"
       >
         <Image
           src="/menu.svg"
@@ -23,8 +22,6 @@ export default function Menu() {
           className="w-8 h-8"
         />
       </motion.button>
-
-      {/* Half-circle menu */}
       <AnimatePresence>
         {open && (
           <motion.div
