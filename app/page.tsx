@@ -33,7 +33,6 @@ export default function Home() {
           className="px-6 py-3 rounded-full border-2 border-blue-400 text-blue-600 hover:bg-blue-100 dark:hover:bg-blue-900/20 transition font-semibold text-base"
         >
           Contact Me
-          test test
         </a>
       </div>
       <footer className="mt-16 text-sm text-slate-500 dark:text-slate-400">
