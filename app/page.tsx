@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import { useEffect, useRef } from "react";
+import Menu from "./components/Menu";
 
 
 export default function Home() {
@@ -76,6 +77,9 @@ export default function Home() {
           justify-center bg-gradient-to-tr from-indigo-100 via-teal-50
           to-purple-100 dark:from-indigo-950 dark:via-gray-900 dark:to-purple-900
           text-gray-900 dark:text-white px-6 transition-colors duration-700">
+
+      <Menu />
+
       {/* Main bubble */}
       <div
         ref={mainBubbleRef}
