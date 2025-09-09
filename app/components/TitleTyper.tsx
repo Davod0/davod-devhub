@@ -28,5 +28,9 @@ export function TitleTyper({ text = "", typingSpeed = 100, onComplete }: TitleTy
     }
   }, [index, text.length, onComplete]);
 
-  return <span>{displayedText}</span>;
+  return (
+    <span className="text-2xl sm:text-4xl lg:text-5xl font-extrabold">
+      {displayedText}
+    </span>
+  );
 }

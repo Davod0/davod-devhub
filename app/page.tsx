@@ -117,13 +117,13 @@ export default function Home() {
         </div>
 
           {/* Title */}
-        <h1 className="text-5xl sm:text-6xl font-extrabold mb-4 text-center tracking-tight leading-tight text-white">
+        <h1 className="text-center tracking-tight leading-tight text-white mb-3">
           <TitleTyper text="Hi, I’m Davod" typingSpeed={120} onComplete={() => setTitleDone(true)} />
         </h1>
 
         {/* Subtitle */}
         {titleDone && (
-          <p className="text-xl sm:text-2xl text-center mb-10 font-medium leading-relaxed">
+          <p className="text-xl sm:text-2xl text-center mb-5 font-medium leading-relaxed">
             <TypingLoop
               lines={[
                 "Welcome to my portfolio",
