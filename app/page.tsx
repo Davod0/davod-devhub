@@ -140,7 +140,7 @@ export default function Home() {
         </p>
         <div className="flex gap-6 mb-8">
           <a
-            href="https://www.linkedin.com/in/YOUR-LINKEDIN-USERNAME"
+            href="https://www.linkedin.com/in/davod-nikoyi-0ba901294"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn"
