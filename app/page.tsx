@@ -5,6 +5,7 @@ import Menu from "./components/Menu";
 import Bubble from "./components/Bubble";
 import { TypingLoop } from "./components/TypingLoop";
 import { TitleTyper } from "./components/TitleTyper";
+import Button from "./components/Button";
 
 export default function Home() {
   const mainBubbleRef = useRef<HTMLDivElement>(null);
@@ -147,7 +148,7 @@ export default function Home() {
             className="hover:scale-110 hover:rotate-3 transition-transform duration-300"
           >
             <Image
-              src="/linkedin.svg"
+              src="./svg/linkedin.svg"
               alt="LinkedIn"
               width={32}
               height={32}
@@ -162,7 +163,7 @@ export default function Home() {
             className="hover:scale-110 hover:-rotate-3 transition-transform duration-300"
           >
             <Image
-              src="/github.svg"
+              src="./svg/github.svg"
               alt="GitHub"
               width={32}
               height={32}
@@ -170,6 +171,7 @@ export default function Home() {
             />
           </a>
         </div>
+          <Button title="Tech - Stack and Tools" route="./teck-stack"/>
         <footer className="mt-20 text-xs text-[#00ADB5] tracking-wide">
           © {new Date().getFullYear()} Davod Nikoyi. Crafted with care.
         </footer>

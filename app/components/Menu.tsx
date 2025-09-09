@@ -61,7 +61,7 @@
           className="cursor-pointer z-10 relative group"
         >
           <Image
-            src="/menu.svg"
+            src="./svg/menu.svg"
             alt="Menu"
             width={40}
             height={40}
