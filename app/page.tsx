@@ -3,8 +3,8 @@ import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import Menu from "./components/Menu";
 import Bubble from "./components/Bubble";
-import { TittleText } from "./components/TittleText";
-import { TypeOnce } from "./components/TypeOnce";
+import { TypingLoop } from "./components/TypingLoop";
+import { TitleTyper } from "./components/TitleTyper";
 
 export default function Home() {
   const mainBubbleRef = useRef<HTMLDivElement>(null);
@@ -118,14 +118,15 @@ export default function Home() {
 
           {/* Title */}
         <h1 className="text-5xl sm:text-6xl font-extrabold mb-4 text-center tracking-tight leading-tight text-white">
-          <TypeOnce text="Hi, I’m Davod" typingSpeed={120} onComplete={() => setTitleDone(true)} />
+          <TitleTyper text="Hi, I’m Davod" typingSpeed={120} onComplete={() => setTitleDone(true)} />
         </h1>
 
         {/* Subtitle */}
         {titleDone && (
           <p className="text-xl sm:text-2xl text-center mb-10 font-medium leading-relaxed">
-            <TittleText
+            <TypingLoop
               lines={[
+                "Welcome to my portfolio",
                 "I am a system developer",
                 "I am also a full-stack web developer",
               ]}
@@ -136,8 +137,8 @@ export default function Home() {
         )}
 
         <p className="max-w-xl text-lg sm:text-xl text-center mb-10 font-medium leading-relaxed">
-          I’m a full-stack developer passionate about building clean, scalable and
-          high-performance web applications. Let’s turn ideas into elegant code.
+          I&apos;m a systems developer with a passion for building efficient backend solutions.
+          I&apos;m also a full-stack web developer who enjoys creating clean, responsive and scalable web and mobile applications
         </p>
         <div className="flex gap-6 mb-8">
           <a

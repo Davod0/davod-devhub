@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react";
 
-interface TittleTextProps {
+interface TypingLoopProps {
   lines: string[];
   typingSpeed?: number;
   pauseAfter?: number;
 }
 
-export function TittleText({ lines, typingSpeed = 100, pauseAfter = 1500 }: TittleTextProps) {
+export function TypingLoop({ lines, typingSpeed = 100, pauseAfter = 1500 }: TypingLoopProps) {
   const [displayedText, setDisplayedText] = useState("");
   const [lineIndex, setLineIndex] = useState(0);
   const [charIndex, setCharIndex] = useState(0);

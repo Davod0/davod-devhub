@@ -1,13 +1,13 @@
 "use client";
 import { useState, useEffect } from "react";
 
-interface TypeOnceProps {
+interface TitleTyperProps {
   text: string;
   typingSpeed?: number;
   onComplete?: () => void;
 }
 
-export function TypeOnce({ text = "", typingSpeed = 100, onComplete }: TypeOnceProps) {
+export function TitleTyper({ text = "", typingSpeed = 100, onComplete }: TitleTyperProps) {
   const [displayedText, setDisplayedText] = useState("");
   const [index, setIndex] = useState(0);
 
