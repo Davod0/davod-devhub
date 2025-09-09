@@ -12,6 +12,7 @@ export default function Home() {
   const [titleDone, setTitleDone] = useState(false);
 
   useEffect(() => {
+    if (window.innerWidth < 768) return;
     const positions: { x: number; y: number }[] = [];
     const trailSpacing = 3;
     const size = 100;
@@ -76,34 +77,33 @@ export default function Home() {
 
   return (
     <main
-      className="relative flex flex-col min-h-screen items-center justify-center 
+      className="relative flex flex-col min-h-screen items-center justify-center
       bg-[#222831] text-[#00ADB5] px-6 transition-colors duration-700 overflow-hidden"
     >
       <Menu />
-
-      {/* Main bubble */}
-      <Bubble
-        ref={mainBubbleRef}
-        sizeClass="w-20 h-20"
-        gradient="bg-gradient-to-tr from-cyan-400 via-teal-400 to-blue-500"
-        opacity="opacity-30"
-        zIndex="z-50"
-      />
-
-      {/* Smaller trailing bubbles */}
-      {bubbleSizes.map((size, i) => (
+      <div className="hidden md:block">
         <Bubble
-          key={i}
-          ref={(el) => {
-            if (el) smallBubblesRef.current[i] = el;
-          }}
-          sizeClass={size}
-          gradient="bg-gradient-to-tr from-cyan-300 via-teal-300 to-blue-400"
-          opacity="opacity-20"
-          zIndex="z-40"
+          ref={mainBubbleRef}
+          sizeClass="w-20 h-20"
+          gradient="bg-gradient-to-tr from-cyan-400 via-teal-400 to-blue-500"
+          opacity="opacity-30"
+          zIndex="z-50"
         />
-      ))}
-
+      </div>
+      <div className="hidden md:block">
+        {bubbleSizes.map((size, i) => (
+          <Bubble
+            key={i}
+            ref={(el) => {
+              if (el) smallBubblesRef.current[i] = el;
+            }}
+            sizeClass={size}
+            gradient="bg-gradient-to-tr from-cyan-300 via-teal-300 to-blue-400"
+            opacity="opacity-20"
+            zIndex="z-40"
+          />
+        ))}
+      </div>
       <div className="relative z-10 flex flex-col items-center w-full max-w-lg">
         <div className="w-52 h-59 rounded-full overflow-hidden shadow-xl mb-8 border-4 border-white">
           <Image
