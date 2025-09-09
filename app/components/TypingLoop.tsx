@@ -39,7 +39,7 @@ export function TypingLoop({ lines, typingSpeed = 100, pauseAfter = 1500 }: Typi
 
   return (
   <span
-    className="inline-block"
+    className="inline-block text:medium sm:text-lg md:text-xl lg:text-2xl text-center mb-5 font-medium leading-relaxed"
     style={{ minWidth: `${Math.max(...lines.map(l => l.length))}ch` }}
   >
     {displayedText}

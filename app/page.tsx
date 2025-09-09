@@ -105,7 +105,7 @@ export default function Home() {
         ))}
       </div>
       <div className="relative z-10 flex flex-col items-center w-full max-w-lg">
-        <div className="w-52 h-59 rounded-full overflow-hidden shadow-xl mb-8 border-4 border-white">
+        <div className="w-32 h-40 sm:w-40 sm:h-48 md:w-52 md:h-60 rounded-full overflow-hidden shadow-xl mb-8 border-4 border-white">
           <Image
             src="/davod.png"
             alt="Portfolio picture"
@@ -116,14 +116,11 @@ export default function Home() {
           />
         </div>
 
-          {/* Title */}
-        <h1 className="text-center tracking-tight leading-tight text-white mb-3">
+        <h1 className="text-center tracking-tight leading-tight text-white mb-4">
           <TitleTyper text="Hi, I’m Davod" typingSpeed={120} onComplete={() => setTitleDone(true)} />
         </h1>
-
-        {/* Subtitle */}
         {titleDone && (
-          <p className="text-xl sm:text-2xl text-center mb-5 font-medium leading-relaxed">
+          <p>
             <TypingLoop
               lines={[
                 "Welcome to my portfolio",
@@ -136,7 +133,8 @@ export default function Home() {
           </p>
         )}
 
-        <p className="max-w-xl text-lg sm:text-xl text-center mb-10 font-medium leading-relaxed">
+        <p className="max-w-xl  text:medium sm:text-lg md:text-xl
+           lg:text-2xl  text-center mb-10 font-medium leading-relaxed">
           I&apos;m a systems developer with a passion for building efficient backend solutions.
           I&apos;m also a full-stack web developer who enjoys creating clean, responsive and scalable web and mobile applications
         </p>
@@ -157,7 +155,7 @@ export default function Home() {
             />
           </a>
           <a
-            href="https://github.com/YOUR-GITHUB-USERNAME"
+            href="https://github.com/Davod0"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="GitHub"
@@ -168,18 +166,10 @@ export default function Home() {
               alt="GitHub"
               width={32}
               height={32}
-              className="w-8 h-8"
+              className="w-8 h-8 invert"
             />
           </a>
         </div>
-        <a
-          href="/resume.pdf"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="px-6 py-3 rounded-full bg-[#00ADB5] text-[#222831] shadow-lg hover:bg-[#00cfd6] hover:scale-105 transition-all duration-300 font-semibold text-base tracking-wide"
-        >
-          View Resume
-        </a>
         <footer className="mt-20 text-xs text-[#00ADB5] tracking-wide">
           © {new Date().getFullYear()} Davod Nikoyi. Crafted with care.
         </footer>
