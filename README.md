@@ -1,4 +1,9 @@
-This is a next,js web application and I am using it to build my portfolio. This project is deployed on Netlify.
+This is a Next.js web application that I built as a test project to explore portfolio creation.
+It is not my actual portfolio, but rather an experimental project-
+
+
+
+For running the project on your local machine, follow these steps:
 
 npm run dev
 # or
