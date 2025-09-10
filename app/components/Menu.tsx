@@ -22,31 +22,31 @@
             >
               <nav className="flex flex-col text-white font-medium sm:font-semibold h-full justify-evenly pt-13 pr-2">
                 <a
-                  href="#about"
+                  href="./"
                   className="flex items-center justify-center
                     h-12 w-1/2 self-end
                     text-[8px] sm:text-xs md:text-sm lg:text-base
                     border-b border-white/30
-                    transition-transform transition-colors hover:text-[#00ADB5] hover:scale-105"
+                    transition-colors hover:text-[#00ADB5] hover:scale-105"
                 >
                  Contact
                 </a>
                 <a
-                  href="#projects"
+                  href="./"
                   className="flex items-center justify-center
                     h-14 w-2/3 self-end
                     text-[8px] sm:text-xs md:text-sm lg:text-base
                     border-b border-white/30
-                    transition-transform transition-colors hover:text-[#00ADB5] hover:scale-105"
+                    transition-colors hover:text-[#00ADB5] hover:scale-105"
                 >
                   Projects
                 </a>
                 <a
-                  href="#contact"
+                  href="./"
                   className="flex items-center justify-center
                     h-16 w-5/6 self-end
                     text-[8px] sm:text-xs md:text-sm lg:text-base
-                    transition-transform transition-colors hover:text-[#00ADB5] hover:scale-105"
+                    transition-colors hover:text-[#00ADB5] hover:scale-105"
                 >
                   About Me
                 </a>

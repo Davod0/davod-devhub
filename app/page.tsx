@@ -171,7 +171,7 @@ export default function Home() {
             />
           </a>
         </div>
-          <Button title="Tech - Stack and Tools" route="./teck-stack"/>
+          <Button title="Tech - Stack and Tools" route="./"/>
         <footer className="mt-20 text-xs text-[#00ADB5] tracking-wide">
           © {new Date().getFullYear()} Davod Nikoyi. Crafted with care.
         </footer>
