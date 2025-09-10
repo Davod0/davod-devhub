@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 const techIcons = [
   { name: "Git", src: "/icons/git.svg" },
-  { name: "Github", src: "/icons/github.svg" },
+  { name: "Github", src: "/svg/github.svg" },
   { name: "Gitlab", src: "/icons/gitlab.svg" },
   { name: "Linear", src: "/icons/linear.svg" },
   { name: "Agile", src: "/icons/agile.svg" },
